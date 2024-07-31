@@ -1,0 +1,60 @@
+/* static/css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#subject-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#subject-nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#subject-nav a.active {
+    color: #fff;
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+#selected-subject {
+    margin: 20px;
+}
+
+#chapter-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+#chapter-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#chapter-list li:last-child {
+    border-bottom: none;
+}
+
+#chapter-list .chapter-name {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#chapter-list .chapter-name:hover {
+    text-decoration: underline;
+}
+
+#chapter-list .child-chapter-name {
+    padding-left: 20px;
+}

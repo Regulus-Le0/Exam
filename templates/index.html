@@ -1,0 +1,32 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刷题网站</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav id="subject-nav">
+        <!-- 主题列表将在这里动态生成 -->
+    </nav>
+    <main>
+        <section id="selected-subject">
+            <h2>选择的主题：</h2>
+            <p id="selected-subject-name"></p>
+        </section>
+        <section id="chapters">
+            <ul id="chapter-list">
+                <!-- 章节列表将在这里动态生成 -->
+            </ul>
+            <section id="subchapters">
+                <ul class="subchapter-list">
+                    <!-- 子章节列表将在这里动态生成 -->
+                </ul>
+            </section>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
